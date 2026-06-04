@@ -1,26 +1,21 @@
 #include <stdio.h>
 
-int i, j;
-
 int main()
 {
-    int n = 5;
+    int i, j;
 
-    for (i = 1; i <= n; i++)
+    for(i = 5; i >= 1; i--)
     {
-        // spaces
-        for (j = 1; j <= (i - 1) * 4; j++)
+        /* Print spaces */
+        for(j = 1; j <= (5 - i) * 3; j++)
         {
             printf(" ");
         }
 
-        // numbers (your same logic)
-        for (j = i; j <= n; j++)
+        /* Print pattern */
+        for(j = i; j >= 1; j--)
         {
-            if (j % 2 == 0)
-                printf("0 ");
-            else
-                printf("1 ");
+            printf("%d", j % 2);
         }
 
         printf("\n");
