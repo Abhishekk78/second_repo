@@ -98,3 +98,67 @@ return 0;
 
 
 //     }
+
+
+
+
+
+// Q: sum of array using pointer 
+
+// #include <stdio.h>
+
+// void sum(int *ptr,int l){
+    
+//     int sum=0,i;
+    
+//     for(i=0;i<l;i++){
+//         sum+= *(ptr+i);
+//     }
+//     printf("The sum of = %d\n",sum);
+// }
+
+// int main(){
+    
+//     int arr[] = {5,7,2,8,9};
+    
+//     int l = sizeof(arr)/sizeof(arr[0]);
+    
+//     sum(arr,l);
+// }
+
+
+
+// Q: check palandrom or not 
+
+// #include <stdio.h>
+// #include <string.h>
+// #include <stdbool.h>
+
+// bool checkpalandrom(char str[]){
+    
+//     int l = strlen(str);
+//     int right = l-1;
+//     int left = 0;
+    
+//     while(left<right){
+//         if(str[left] != str[right]){
+//             return false;
+//         }
+//         left++;
+//         right--;
+//     }
+//     return true;
+// }
+
+// int main(){
+    
+//     char str[] = "madamadas";
+    
+//     if(checkpalandrom(str)){
+//         printf("It is palandrom");
+//     }
+//     else{
+//                 printf("It is  not palandrom");
+//     }
+//     return 0;
+// }
